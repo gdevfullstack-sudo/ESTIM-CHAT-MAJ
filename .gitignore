@@ -1,0 +1,24 @@
+# Secrets — JAMAIS sur GitHub
+.env
+.env.local
+.env.production
+.env.development
+
+# Dépendances
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Uploads utilisateurs
+public/uploads/
+uploads/
+
+# Système
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
