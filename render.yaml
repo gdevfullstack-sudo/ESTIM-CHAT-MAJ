@@ -4,33 +4,36 @@ services:
     runtime: node
     plan: free
     buildCommand: npm install
-    startCommand: npm start
+    startCommand: node server/server.js
+
     envVars:
       - key: NODE_ENV
         value: production
       - key: CLIENT_URL
-        sync: false
+        value: "https://estim-chat2.onrender.com"
       - key: MONGO_URI
-        sync: false
+        value: "mongodb+srv://estimuser:MBxd4nYXBueq8HKq@cluster0.8kt9y6n.mongodb.net/estimchat?retryWrites=true&w=majority"
       - key: JWT_SECRET
-        sync: false
+        value: "7744af9dddc4b98ec02c381150eaee77"
       - key: SESSION_SECRET
-        sync: false
+        value: "a0b71a8ebd95128cc2444bf90281e3e3"
       - key: GOOGLE_CLIENT_ID
-        sync: false
+        value: "237020081768-2vne4nisef7fenbntj9p5onp8k70nobg.apps.googleusercontent.com"
       - key: GOOGLE_CLIENT_SECRET
-        sync: false
+        value: "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"
       - key: GOOGLE_CALLBACK_URL
-        sync: false
+        value: "https://estim-chat2.onrender.com/api/auth/google/callback"
+
       - key: APPLE_CLIENT_ID
-        sync: false
+        value: ""
       - key: APPLE_TEAM_ID
-        sync: false
+        value: ""
       - key: APPLE_KEY_ID
-        sync: false
+        value: ""
       - key: APPLE_PRIVATE_KEY
-        sync: false
+        value: ""
       - key: APPLE_CALLBACK_URL
-        sync: false
+        value: ""
+
       - key: MAX_FILE_SIZE_MB
         value: "5"
